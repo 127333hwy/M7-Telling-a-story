@@ -1,0 +1,41 @@
+[gd_resource type="Theme" load_steps=5 format=3 uid="uid://drays61pfu7xc"]
+
+[ext_resource type="StyleBox" uid="uid://j2duod3r37om" path="res://lessons/button_blue.tres" id="1_ei3wx"]
+[ext_resource type="StyleBox" uid="uid://drnmljbw3adhy" path="res://lessons/Button_pink.tres" id="2_ulena"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_aaryr"]
+content_margin_left = 22.0
+content_margin_top = 25.0
+content_margin_right = 22.0
+content_margin_bottom = 18.0
+bg_color = Color(0.4392157, 0.6392157, 0.94509804, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.66430014, 0, 0.05898364, 1)
+corner_radius_top_left = 48
+corner_radius_top_right = 48
+corner_radius_bottom_right = 48
+corner_radius_bottom_left = 48
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ei3wx"]
+content_margin_left = 48.0
+content_margin_top = 32.0
+content_margin_right = 48.0
+content_margin_bottom = 32.0
+bg_color = Color(0.8862745, 0.85882354, 1, 1)
+corner_radius_top_left = 32
+corner_radius_top_right = 32
+corner_radius_bottom_right = 32
+corner_radius_bottom_left = 32
+
+[resource]
+default_font_size = 48
+Button/styles/disabled = ExtResource("1_ei3wx")
+Button/styles/focus = SubResource("StyleBoxFlat_aaryr")
+Button/styles/hover = ExtResource("2_ulena")
+Button/styles/normal = ExtResource("1_ei3wx")
+Button/styles/pressed = ExtResource("2_ulena")
+RichTextLabel/colors/default_color = Color(0, 0.71956223, 0.5550393, 1)
+RichTextLabel/styles/normal = SubResource("StyleBoxFlat_ei3wx")

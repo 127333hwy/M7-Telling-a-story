@@ -1,5 +1,6 @@
-[gd_scene load_steps=6 format=3 uid="uid://bddwfljeh2thd"]
+[gd_scene load_steps=7 format=3 uid="uid://bddwfljeh2thd"]
 
+[ext_resource type="Theme" uid="uid://drays61pfu7xc" path="res://lessons/main_theme.tres" id="1_5dtme"]
 [ext_resource type="Shader" uid="uid://cs15e2hgd2lan" path="res://assets/sliding_background.gdshader" id="1_rjqnu"]
 [ext_resource type="Texture2D" uid="uid://bnly1gkbxw6b5" path="res://assets/bubble_pattern.png" id="2_5dtme"]
 [ext_resource type="Texture2D" uid="uid://copkt78vgp37i" path="res://assets/sophia.png" id="3_6cfwb"]
@@ -19,6 +20,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = ExtResource("1_5dtme")
 
 [node name="Background" type="ColorRect" parent="."]
 material = SubResource("ShaderMaterial_rduj4")
@@ -31,10 +33,10 @@ grow_vertical = 2
 
 [node name="Body" type="TextureRect" parent="."]
 layout_mode = 0
-offset_left = 1269.0
-offset_top = 387.0
-offset_right = 1924.0
-offset_bottom = 1076.0
+offset_left = 1149.0
+offset_top = 386.0
+offset_right = 1804.0
+offset_bottom = 1075.0
 texture = ExtResource("3_6cfwb")
 expand_mode = 1
 stretch_mode = 5
@@ -44,10 +46,10 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 8.0
-offset_top = 34.0
-offset_right = -18.0
-offset_bottom = -6.0
+offset_left = 7.0
+offset_top = 41.0
+offset_right = -19.0
+offset_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("4_nggfo")
@@ -64,6 +66,7 @@ offset_top = 447.0
 offset_right = -81.08008
 offset_bottom = -577.8801
 text = "annyeong!!!! YingYing!!"
+fit_content = true
 
 [node name="NextButton" type="Button" parent="."]
 layout_mode = 1
@@ -72,8 +75,8 @@ anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -144.0
-offset_top = -79.0
+offset_left = -195.0
+offset_top = -110.0
 grow_horizontal = 0
 grow_vertical = 0
 text = "Next"
