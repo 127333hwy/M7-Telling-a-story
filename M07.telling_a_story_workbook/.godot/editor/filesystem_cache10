@@ -1,7 +1,6 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1761760429
+::res://::1761931927
 icon_telling_a_story.png::CompressedTexture2D::6303229813746255456::1760899870::1761155863::1::::<><><>0<>0<>e643ef57334e7b0b7d625ea9018c612e<>res://.godot/imported/icon_telling_a_story.png-575f1234b8f51c85751bd402286d7779.ctex::
-Button_pink.tres::StyleBoxFlat::8380058026666738386::1761760429::0::1::::<><><>0<>0<><>::
 ::res://addons/::1760899870
 ::res://addons/gdpractice/::1760899870
 build.gd::GDScript::4950939465197338071::1760899870::0::1::::<>SceneTree<><>0<>0<><>::
@@ -161,10 +160,12 @@ talking_synth_alternate.ogg::AudioStreamOggVorbis::3285191881384235626::17608998
 test.svg::CompressedTexture2D::996294012766278173::1760899870::1761155863::1::::<><><>0<>0<>ba4341a6c83fa4e0504ef2d150f3a830<>res://.godot/imported/test.svg-689185d65599d06cb921948f33195eb0.ctex::
 ::res://assets/extras/::1761155863
 emotion_angry.png::CompressedTexture2D::4318358562975653356::1760899870::1761155863::1::::<><><>0<>0<>adbc721005eba82a7e28488a90570101<>res://.godot/imported/emotion_angry.png-fd0c3451c84588ea85c8053c4187c2db.ctex::
-::res://lessons/::1761760523
-button_blue.tres::StyleBoxFlat::687656400215665560::1761760216::0::1::::<><><>0<>0<><>::
-dialogue.tscn::PackedScene::2604525642532035013::1761760523::0::1::::<><><>0<>0<><>::uid://drays61pfu7xc::::res://lessons/main_theme.tres<>uid://cs15e2hgd2lan::::res://assets/sliding_background.gdshader<>uid://bnly1gkbxw6b5::::res://assets/bubble_pattern.png<>uid://copkt78vgp37i::::res://assets/sophia.png<>uid://d000xjtr4iqtk::::res://assets/emotion_regular.png
-main_theme.tres::Theme::8353963414120343136::1761760523::0::1::::<><><>0<>0<><>::uid://j2duod3r37om::::res://lessons/button_blue.tres<>uid://drnmljbw3adhy::::res://Button_pink.tres
+::res://lessons/::1761763005
+button_blue.tres::StyleBoxFlat::687656400215665560::1761762524::0::1::::<><><>0<>0<><>::
+Button_pink.tres::StyleBoxFlat::8380058026666738386::1761761111::0::1::::<><><>0<>0<><>::
+dialogue.gd::GDScript::7688300734123814668::1761762904::0::1::::<>Control<><>0<>0<><>::
+dialogue.tscn::PackedScene::2604525642532035013::1761763005::0::1::::<><><>0<>0<><>::uid://drays61pfu7xc::::res://lessons/main_theme.tres<>uid://cs15e2hgd2lan::::res://assets/sliding_background.gdshader<>uid://bnly1gkbxw6b5::::res://assets/bubble_pattern.png<>uid://dhsjgposivl1e::::res://lessons/dialogue.gd<>uid://copkt78vgp37i::::res://assets/sophia.png<>uid://d000xjtr4iqtk::::res://assets/emotion_regular.png
+main_theme.tres::Theme::8353963414120343136::1761762524::0::1::::<><><>0<>0<><>::uid://j2duod3r37om::::res://lessons/button_blue.tres<>uid://drnmljbw3adhy::::res://lessons/Button_pink.tres
 ::res://practices/::1760899870
 ::res://practices/L5.P1.pick_correct_response/::1761155863
 pick_correct_response.gd::GDScript::4093551056369971252::1760899870::0::1::::<>ColorRect<><>0<>0<><>::
