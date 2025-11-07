@@ -67,10 +67,10 @@ layout_mode = 1
 anchors_preset = -1
 anchor_right = 0.674
 anchor_bottom = 0.98600006
-offset_left = 55.0
-offset_top = 447.0
-offset_right = -81.08008
-offset_bottom = -577.8801
+offset_left = 653.0
+offset_top = 261.0
+offset_right = 516.9199
+offset_bottom = -672.8801
 text = "annyeong!!!! YingYing!!"
 fit_content = true
 
