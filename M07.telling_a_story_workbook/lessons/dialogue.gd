@@ -25,12 +25,12 @@ var dialogue_items: Array[Dictionary] =[
 	},
 	{
 		"expression": expressions["regular"],
-	"text": "HIIIIIIIIIIII^^",
+	"text": "[wave]HIIIIIIIIIIII^^[/wave]",
 	"character": bodies["pink"],
 	},
 	{
 		"expression": expressions["sad"],
-		"text":"I don't think I'll finish my work on time TT",
+		"text":"[shake]I don't think I'll finish my work on time TT[/shake]",
 		"character": bodies["sophia"],
 	},
 	{
@@ -40,7 +40,7 @@ var dialogue_items: Array[Dictionary] =[
 	},
 	{
 		"expression": expressions["happy"],
-		"text": "but I signed up for flex time for extra work time!",
+		"text": "but I signed up for [rainbow val=1.0][wave]flex time[/wave][/rainbow]for extra work time!",
 		"character": bodies["sophia"]
 	},
 	{
@@ -55,7 +55,7 @@ var dialogue_items: Array[Dictionary] =[
 	},
 	{
 		"expression": expressions["regular"],
-		"text": "Good Luck!",
+		"text": "[tornado freq=3.0][rainbow val=1.0]Good Luck![/rainbow][/tornado]",
 		"character": bodies["pink"]
 	},
 	{
