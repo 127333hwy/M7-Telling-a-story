@@ -61,6 +61,7 @@ var dialogue_items: Array[Dictionary] =[
 	{
 		"expression": expressions["happy"],
 		"text": "HEHEHE Byebye~~",
+		"character": bodies["sophia"]
 	},
 ]
 
@@ -69,6 +70,7 @@ func show_text() -> void:
 	var current_item :=dialogue_items[current_item_index]
 	rich_text_label.text = current_item["text"]
 	expression.texture = current_item["expression"]
+
 	body.texture= current_item["character"]
 	rich_text_label.visible_ratio = 0.0
 	var tween := create_tween()
@@ -79,6 +81,9 @@ func show_text() -> void:
 	audio_stream_player.play(sound_start_position)
 	tween.finished.connect(audio_stream_player .stop)
 	slide_in()
+	next_button.disabled= true
+	tween.finished.connect(func() -> void:
+		next_button.disabled = false)
 
 func advance() -> void:
 	current_item_index += 1
