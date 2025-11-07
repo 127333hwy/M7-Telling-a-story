@@ -3,18 +3,44 @@ extends Control
 @onready var rich_text_label: RichTextLabel = %RichTextLabel
 @onready var next_button: Button = %NextButton
 @onready var audio_stream_player: AudioStreamPlayer = %AudioStreamPlayer
+@onready var body: TextureRect = %Body
+@onready var expression: TextureRect = %expression
 
-var dialogue_items: Array[String] =[
-	"Hello",
-	"How are you?",
-	"nice to meet you!",
-	"Byebye~",
+
+var expressions := {
+	"happy": preload("res://assets/emotion_happy.png"),
+	"regular": preload("res://assets/emotion_regular.png"),
+	"sad": preload("res://assets/emotion_sad.png"),
+}
+
+var dialogue_items: Array[Dictionary] =[
+	{
+		"expression": expressions["regular"],
+	"text": "Hello^^",
+	},
+	{
+		"expression": expressions["sad"],
+		"text":"I don't think I'll finish my work on time TT",
+	},
+	{
+		"expression": expressions["happy"],
+		"text": "but I signed up for flex time for extra work time!",
+	},
+	{
+		"expression": expressions["regular"],
+		"text": "hopefully I'll get it done on time",
+	},
+	{
+		"expression": expressions["happy"],
+		"text": "HEHEHE Byebye~~",
+	},
 ]
 
 var current_item_index :=0
 func show_text() -> void:
 	var current_item :=dialogue_items[current_item_index]
-	rich_text_label.text = current_item
+	rich_text_label.text = current_item["text"]
+	expression.texture = current_item["expression"]
 	rich_text_label.visible_ratio = 0.0
 	var tween := create_tween()
 	var text_appearng_duration := 1.2
