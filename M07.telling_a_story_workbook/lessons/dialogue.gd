@@ -6,6 +6,10 @@ extends Control
 @onready var body: TextureRect = %Body
 @onready var expression: TextureRect = %expression
 
+var bodies := {
+	"sophia": preload("res://assets/sophia.png"),
+	"pink": preload("res://assets/pink.png")
+}
 
 var expressions := {
 	"happy": preload("res://assets/emotion_happy.png"),
@@ -17,18 +21,42 @@ var dialogue_items: Array[Dictionary] =[
 	{
 		"expression": expressions["regular"],
 	"text": "Hello^^",
+	"character": bodies["sophia"],
+	},
+	{
+		"expression": expressions["regular"],
+	"text": "HIIIIIIIIIIII^^",
+	"character": bodies["pink"],
 	},
 	{
 		"expression": expressions["sad"],
 		"text":"I don't think I'll finish my work on time TT",
+		"character": bodies["sophia"],
+	},
+	{
+		"expression": expressions["sad"],
+		"text":"Oh!",
+		"character": bodies["pink"],
 	},
 	{
 		"expression": expressions["happy"],
 		"text": "but I signed up for flex time for extra work time!",
+		"character": bodies["sophia"]
+	},
+	{
+		"expression": expressions["happy"],
+		"text": "that's great!",
+		"character": bodies["pink"]
 	},
 	{
 		"expression": expressions["regular"],
 		"text": "hopefully I'll get it done on time",
+		"character": bodies["sophia"]
+	},
+	{
+		"expression": expressions["regular"],
+		"text": "Good Luck!",
+		"character": bodies["pink"]
 	},
 	{
 		"expression": expressions["happy"],
@@ -41,9 +69,10 @@ func show_text() -> void:
 	var current_item :=dialogue_items[current_item_index]
 	rich_text_label.text = current_item["text"]
 	expression.texture = current_item["expression"]
+	body.texture= current_item["character"]
 	rich_text_label.visible_ratio = 0.0
 	var tween := create_tween()
-	var text_appearng_duration := 1.2
+	var text_appearng_duration: float = current_item["text"].length() / 30.0
 	tween.tween_property(rich_text_label, "visible_ratio", 1.0, text_appearng_duration)
 	var sound_max_offset := audio_stream_player.stream.get_length() - text_appearng_duration
 	var sound_start_position:= randf() * sound_max_offset
